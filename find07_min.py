@@ -5,5 +5,9 @@ def find_min(data):
         data: list of numbers
     returns: minimum number in the list
     """
-
-    return 0
+    minm = data[0]
+    for i in data:
+        if i<minm:
+            minm = i
+    return minm
+print(find_min([2,3,8,9,4,-6,1]))
